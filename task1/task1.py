@@ -1,4 +1,7 @@
-n, m = map(int, input().split(' '))
+import sys
+
+n = int(sys.argv[1])
+m = int(sys.argv[2])
 mas = []
 
 for i in range(1, n + 1, 1):

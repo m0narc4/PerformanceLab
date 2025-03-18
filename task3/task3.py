@@ -1,6 +1,9 @@
 import json
+import sys
 
-file1, file2, file3 = input().split(' ')
+file1 = sys.argv[1]
+file2 = sys.argv[2]
+file3 = sys.argv[3]
 
 
 def change_value(identifier, val, data):
@@ -23,4 +26,4 @@ for elem in values:
     change_value(ID, value, tests['tests'])
 
 with open(file3, 'w') as f:
-    json.dump(tests, f)
+    json.dump(tests, f, indent=4)

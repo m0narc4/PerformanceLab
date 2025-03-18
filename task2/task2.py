@@ -1,6 +1,9 @@
 import math
+import sys
 
-file1, file2 = input().split(' ')
+file1 = sys.argv[1]
+file2 = sys.argv[2]
+
 
 coordinates = []
 
